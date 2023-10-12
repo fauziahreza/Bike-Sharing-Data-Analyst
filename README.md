@@ -1,6 +1,6 @@
 # Bike Sharing Data Analysis Dashboard
 
-![Bike Sharing](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset)
+![Bike Sharing](Asset/Bicycle-sharing.jpg)
 
 This is a bicycle data analysis project using Python with the "Bike Sharing" dataset, which can be accessed [here](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset) on Kaggle. This project was carried out using Google Colab for data analysis and Streamlit to create an interactive dashboard.
 
