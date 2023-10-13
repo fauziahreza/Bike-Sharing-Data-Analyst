@@ -1,3 +1,4 @@
+import os
 import datetime
 import pandas as pd
 import streamlit as st
@@ -10,11 +11,13 @@ from func import (
 if __name__ == '__main__':
   st.header('Bike Sharing Dashboard 🚵🏻‍♀️')
 
-  DF_CLEAN_DAY_PATH = 'D:\Documents\Pelatihan\Dicoding\Analisis data menggunakan python\dataset\clean_day.csv'
-  DF_HOUR_PATH = 'D:\Documents\Pelatihan\Dicoding\Analisis data menggunakan python\dataset\hour.csv'
+  current_dir = os.path.dirname(os.path.abspath(__file__))
 
-  df_clean_day = pd.read_csv(DF_CLEAN_DAY_PATH)
-  df_hour = pd.read_csv(DF_HOUR_PATH)
+  clean_day_path = os.path.join(current_dir, 'dataset', 'clean_day.csv')
+  hour_path = os.path.join(current_dir, 'dataset', 'hour.csv')
+
+  df_clean_day = pd.read_csv(clean_day_path)
+  df_hour = pd.read_csv(hour_path)
 
   date = sidebar(df_clean_day)
   if len(date) == 2:
